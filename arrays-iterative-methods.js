@@ -37,8 +37,8 @@ const emails = users.map(user => user.email)    // [ 'andrew@gmail.com', 'niki20
 const numbers = [1, 2, 3, 4, 5, 4, 8, 4]
 let sum = numbers.reduce((total, val) => total + val, 0)
 // console.log(sum)
-let avg = numbers.reduce((total, val) => total + val, 0)    // numbers.length
-// console.log(avg)
+let avg = numbers.reduce((total, val) => (total + val) / numbers.length)    // average
+console.log(avg)
 
 // const findIndexes = (arr, num) => 
 //         arr.reduce((indexes, el, index) => (el === num) ? [...indexes, index] : indexes, [])
